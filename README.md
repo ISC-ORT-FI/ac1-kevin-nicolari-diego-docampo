@@ -16,3 +16,12 @@ Encontrar los errores en el código de Terraform y corregirlos. El código despl
 El resultado debe ser la web de "Caffé" visualizada desde la url del LoadBalancer obtenida del OUTPUT. 
 
 ![caffe img](./img/caffe.png)
+
+
+Errores corregidos:
+
+1) Agregar la subnet en el archivo de la instancia
+2) Corregir puerto 88 por 80 dentro de security group
+3) en el archivo tfvars cambiamos el nombre de perfil a default
+4) en route tables en el id habia un "_" en vez de un "."
+5) en el route table se cambio el cidr_block al 0.0.0.0/0
